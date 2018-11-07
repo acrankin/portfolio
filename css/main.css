@@ -38,24 +38,29 @@ nav {
     
 }
 
+.card-link {
+    text-decoration: none;
+    color: #000000;
+}
 .card {
+
     border: 1px solid grey;
     padding: .5em;
     margin: 1em;
     img {
-       object-fit: cover; 
+        width: 100%;
+        height: 100%;
     }
     @media screen and (min-width: 750px) {
         justify-self: center;
-        img:hover {
-            
+        img{
+            height: 100%;
+            width: 100%;
         }
-        
     }
     h3 {
     }
     img {
-        width: 200px;
-        height: 200px;
+        
     }
 }
