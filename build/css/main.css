@@ -17,16 +17,60 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    
 }
 
 nav a {
         text-align: center;
         width: 33%;
         text-decoration: none;
+        color: #000000;
     }
 
 nav a:hover {
             background-color: #8367C7;
             color: #F0FFF1;
         }
+
+#project-wrapper {
+    display: block;
+    
+}
+
+@media screen and (min-width: 750px) {
+
+#project-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr
+    
+}
+    }
+
+.card {
+    border: 1px solid grey;
+    padding: .5em;
+    margin: 1em;
+}
+
+.card img {
+       -o-object-fit: cover;
+          object-fit: cover; 
+    }
+
+@media screen and (min-width: 750px) {
+
+.card {
+        justify-self: center
+}
+        .card img:hover {
+            
+        }
+        
+    }
+
+.card h3 {
+    }
+
+.card img {
+        width: 200px;
+        height: 200px;
+    }

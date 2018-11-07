@@ -17,6 +17,7 @@ nav {
         text-align: center;
         width: 33%;
         text-decoration: none;
+        color: #000000;
         &:hover {
             background-color: #8367C7;
             color: #F0FFF1;
@@ -26,5 +27,35 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+}
+
+#project-wrapper {
+    display: block;
+    @media screen and (min-width: 750px) {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
     
+}
+
+.card {
+    border: 1px solid grey;
+    padding: .5em;
+    margin: 1em;
+    img {
+       object-fit: cover; 
+    }
+    @media screen and (min-width: 750px) {
+        justify-self: center;
+        img:hover {
+            
+        }
+        
+    }
+    h3 {
+    }
+    img {
+        width: 200px;
+        height: 200px;
+    }
 }
