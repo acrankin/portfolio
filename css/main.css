@@ -1,0 +1,30 @@
+body {
+    background-color: #F0FFF1;
+    margin: 0px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header { 
+    background-color: #B3E9C7;
+}
+
+#title {
+    margin-top: 0px;
+}
+
+nav {
+    a {
+        text-align: center;
+        width: 33%;
+        text-decoration: none;
+        &:hover {
+            background-color: #8367C7;
+            color: #F0FFF1;
+        }
+    }
+    /* max-width: 1000px;     */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+}
