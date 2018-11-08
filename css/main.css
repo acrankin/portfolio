@@ -23,10 +23,12 @@ nav {
             color: #F0FFF1;
         }
     }
-    /* max-width: 1000px;     */
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    @media screen and (min-width: 1000px) {
+        justify-content: flex-end;
+    }
 }
 
 #project-wrapper {
@@ -34,6 +36,7 @@ nav {
     @media screen and (min-width: 750px) {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
+        /* repeat(auto-fit, minmax(200px, 1fr) */
     }
     
 }
@@ -53,7 +56,7 @@ nav {
     }
     @media screen and (min-width: 750px) {
         justify-self: center;
-        img{
+        img {
             height: 100%;
             width: 100%;
         }
