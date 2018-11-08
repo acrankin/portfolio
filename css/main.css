@@ -71,7 +71,7 @@ nav {
 
 #techs-used {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    grid-template-columns: repeat(auto-fill, minmax(125px, 1fr));
 }
 
 footer {
@@ -82,6 +82,7 @@ footer {
 #project-text {
     display: grid;
     grid-template-columns: 1fr 2fr;
+    grid-gap: .5em;
     /* grid-template-areas: "labels inputs"; */
     /* label {
         grid-area: labels;
@@ -89,4 +90,10 @@ footer {
     input {
         grid-area: inputs;
     } */
+}
+
+#select-wrapper {
+    display: grid;
+    grid-gap: .5em;
+    grid-template-columns: 1fr;
 }
