@@ -80,3 +80,13 @@ nav {
 .card img {
         
     }
+
+#techs-used {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20px, 40px));
+}
+
+.tech-icon {
+    height: 30px;
+    width: 30px;
+}
