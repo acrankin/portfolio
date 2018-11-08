@@ -18,8 +18,8 @@
         </nav>
     </header>
     <main>
+        <h2>Past Projects</h2>
         <div id="project-wrapper">
-            <h2>Past Projects</h2>
             <a class="card-link" href="https://teamtennis.github.io/lewis-in-space/">
                 <div class="card">
                         <h3>Lewis In Space</h3>
@@ -43,40 +43,67 @@
                 </div>
             </a>
         </div>
-        <div id="contact-wrapper">
+        <div id="form-wrapper">
             <h2>Sample Form</h2>
             <form action="">
                 <h3>Add a New Project</h3>
-                <label for="new-project-name">Project Name:</label>
-                <input type="text" id="new-project-name">
-                    <fieldset id="techs-used">
-                        <legend>Select Technologies Used:</legend>
-                        <label for="html">HTML5</label>
+                <div id="project-text">
+                    <label for="new-project-name">Project Name:</label>
+                    <input type="text" id="new-project-name" required>
+                    
+                    <label for="short-description">Brief Description:</label>
+                    <input type="text" id="short-description" required>
+                    
+                    <label for="long-description">Longer Description</label>
+                    <input type="textarea" id="long-description">
+                </div>
+
+                <fieldset id="techs-used">
+                    <legend>Select Technologies Used:</legend>
+                    <div>
                         <input type="checkbox" value="html" id="html">
-                        
-                        <label for="javascript">JavaScript</label>
+                        <label for="html">HTML5</label>
+                    </div>
+                    
+                    <div>
                         <input type="checkbox" value="javascript" id="javascript">
-                        
-                        <label for="node-js"><img src="img/nodejs-512.png" alt="Node JS" class="tech-icon"></label>
+                        <label for="javascript">JavaScript</label>
+                    </div>
+                    
+                    <div>
                         <input type="checkbox" value="node-js" id="node-js">
-                        
-                        <label for="vue-js"><img src="img/vue-logo-pattern (2).jpg" alt="Vue JS logo" class="tech-icon"></label>
+                        <label for="node-js">Node.js</label>
+                    </div>
+                    
+                    <div>
                         <input type="checkbox" value="vue-js" id="vue-js">
-                        
-                        <label for="mongo-db">MongoDB</label>
+                        <label for="vue-js">Vue.js</label>
+                    </div>
+
+                    <div>
                         <input type="checkbox" value="mongo-db" id="mongo-db">
-                        
-                        <label for="express">ExpressJS</label>
+                        <label for="mongo-db">MongoDB</label>
+                    </div>
+                    
+                    <div>
                         <input type="checkbox" value="express" id="express">
-                        
-                        <label for="postgres">PostgreSQL</label>
+                        <label for="express">ExpressJS</label>
+                    </div>
+    
+                    <div>
                         <input type="checkbox" value="postgres" id="postgres">
-                    </fieldset>
+                        <label for="postgres">PostgreSQL</label>
+                    </div>
+                </fieldset>
+                
+                <label for="pic-picker">Choose a Display Image:</label>
+                <input type="file" id="pic-picker" accepted=".jpg,.png,.gif">
+                
             </form>
         </div>
     </main>
     <footer>
-        
+        foot foot foot
 
     </footer>
 
