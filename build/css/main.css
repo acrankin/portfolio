@@ -5,7 +5,7 @@ body {
 }
 
 header { 
-    background-color: #B3E9C7;
+    background-color: #C2F8CB;
 }
 
 #title {
@@ -20,7 +20,7 @@ nav {
 
 nav a {
         text-align: center;
-        width: 33%;
+        width: 33.33%;
         text-decoration: none;
         color: #000000;
     }
@@ -58,7 +58,8 @@ nav {
     color: #000000;
 }
 .card {
-
+    background-color: rgba(194, 248, 203, .3);
+    box-shadow: .2em .2em .2em rgba(0, 0, 0, .5);
     border: 1px solid grey;
     padding: .5em;
 }
@@ -88,21 +89,20 @@ nav {
 }
 
 footer {
-    background-color: #B3E9C7;
+    background-color: #C2F8CB;
     height: 5em;
+    display: flex;
 }
+
+footer a img{
+            height: 2em;
+            width: 2em;
+        }
 
 #project-text {
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-gap: .5em;
-    /* grid-template-areas: "labels inputs"; */
-    /* label {
-        grid-area: labels;
-    }
-    input {
-        grid-area: inputs;
-    } */
 }
 
 #select-wrapper {
@@ -110,3 +110,8 @@ footer {
     grid-gap: .5em;
     grid-template-columns: 1fr;
 }
+
+#form-wrapper {
+    display: none;
+}
+
