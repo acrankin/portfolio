@@ -31,6 +31,99 @@ nav {
     }
 }
 
+main {
+    padding: 0 2em;
+}
+.animated {
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(2em);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+    
+@-webkit-keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateX(0px);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateX(-20px);
+    }
+}
+
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(0px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(-20px);
+    }
+}
+
+@-webkit-keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateX(-20px);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateX(0px);
+    }
+}
+
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.fadeIn {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+}
+.fadeInRight {
+    -webkit-animation-name: fadeInRight;
+    animation-name: fadeInRight;
+}
+
+.fadeInLeft {
+    -webkit-animation-name: fadeInLeft;
+    animation-name: fadeInLeft;
+}
+
+
+#about-wrapper {
+    display: flex;
+    flex-direction: space-evenly;
+}
+
+#portrait {
+    width: 7.5em;
+    height: 10em;
+    border-radius: 50%;
+    margin-left: 2em;
+
+}
+
 #project-wrapper {
     display: block;
     @media screen and (min-width: 750px) {
@@ -51,7 +144,6 @@ nav {
     box-shadow: .2em .2em .2em rgba(0, 0, 0, .5);
     border: 1px solid grey;
     padding: .5em;
-    /* margin: 1em; */
     img {
         width: 100%;
         height: 100%;
@@ -65,9 +157,6 @@ nav {
     }
     h3 {
     }
-    img {
-        
-    }
 }
 
 #techs-used {
@@ -77,20 +166,34 @@ nav {
 
 footer {
     background-color: #C2F8CB;
-    height: 5em;
+    height: 3em;
     display: flex;
-    a{
-        img{
-            height: 2em;
-            width: 2em;
-        }
-    }
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 1em;
+    
 }
 
 #project-text {
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-gap: .5em;
+}
+
+#contact-wrapper {
+    a{
+        text-decoration: none;
+        img{
+        margin: 0 .2 em;
+            height: 2em;
+            width: 2em;
+            transition: all 400ms cubic-bezier(.47,1.64,.41,.8);
+            &:hover {
+                transform: scale(1.5);
+	        }
+        }
+    }
+
 }
 
 #select-wrapper {

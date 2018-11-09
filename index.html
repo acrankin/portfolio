@@ -13,13 +13,19 @@
         <h1 id="title">Hey bud</h1>
         <nav class="nav">
             <a class="nav-link" href="#">About</a>
-            <a class="nav-link" href="#">Projects</a>
-            <a class="nav-link" href="#">Contact</a>
+            <a class="nav-link" href="#projects-heading">Projects</a>
+            <a class="nav-link" href="#contact-heading">Contact</a>
         </nav>
     </header>
     <main>
-        <h2>Past Projects</h2>
-        <div id="project-wrapper">
+
+        <h2>About</h2>
+            <div id="about-wrapper">
+                <p class="animated fadeInLeft">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam amet quasi veniam explicabo. Eius at amet dignissimos fuga ratione quidem delectus voluptas alias, eligendi impedit, et provident laboriosam voluptatum tempore? Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni quis nihil illo qui, consectetur sequi sunt! Perspiciatis, error. Deleniti odit cupiditate impedit autem obcaecati deserunt, facere quas amet suscipit minima?</p>
+                <img id="portrait" class="animated fadeInRight" src="img/super-pretty.jpg" alt="A beautiful bald man">
+            </div>
+        <h2 id="projects-heading">Past Projects</h2>
+        <div id="project-wrapper" class="animated fadeIn">
             <a class="card-link" href="https://teamtennis.github.io/lewis-in-space/">
                 <div class="card">
                         <h3>Lewis In Space</h3>
@@ -115,19 +121,26 @@
                 </div>
             </form>
         </div>
-    </main>
-    <footer>
-        <a href="https://www.linkedin.com/feed/">
-            <img src="img/linkedin-128.png" alt="Linked In Profile Link">
-        </a>
         
-        <a href="https://github.com/acrankin">
-            <img src="img/github-512.png" alt="Github Profile Link">
-        </a>
+        <h2 id="contact-heading">Contact</h2>
+        <div id="contact-wrapper">
+            <a class="contact-link" href="https://www.linkedin.com/feed/">
+                <img src="img/linkedin-128.png" alt="Linked In Profile Link">
+            </a>
+            
+            <a class="contact-link" href="https://github.com/acrankin">
+                <img src="img/github-512.png" alt="Github Profile Link">
+            </a>
+    
+            <a class="contact-link" href="https://www.instagram.com/gilgatrash/">
+                <img src="img/instagram-128.png" alt="Instagram Profile Link">
+            </a>
 
-        <a href="https://www.instagram.com/gilgatrash/">
-            <img src="img/instagram-128.png" alt="Instagram Profile Link">
-        </a>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy;2018 Alex Rankin</p>
 
     </footer>
 
