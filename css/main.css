@@ -121,6 +121,7 @@ main {
     height: 10em;
     border-radius: 50%;
     margin-left: 2em;
+    box-shadow: .1em .2em .3em rgba(0, 0, 0, .5);
 
 }
 
@@ -181,12 +182,14 @@ footer {
 }
 
 #contact-wrapper {
+    display: flex;
+    align-items: center;
     a{
         text-decoration: none;
+        margin-left: 0.5 em;
         img{
-        margin: 0 .2 em;
-            height: 2em;
-            width: 2em;
+            height: 3em;
+            width: 3em;
             transition: all 400ms cubic-bezier(.47,1.64,.41,.8);
             &:hover {
                 transform: scale(1.5);
