@@ -147,12 +147,10 @@ main {
     border-radius: 50%;
     margin-left: 2em;
     box-shadow: .1em .2em .3em rgba(0, 0, 0, .5);
-
 }
 
 #project-wrapper {
     display: block;
-    
 }
 
 @media screen and (min-width: 750px) {
@@ -161,8 +159,6 @@ main {
         grid-gap: 1em;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr
-        /* repeat(auto-fit, minmax(200px, 1fr) */
-    
 }
     }
 
@@ -204,7 +200,6 @@ footer {
     justify-content: flex-end;
     align-items: center;
     padding-right: 1em;
-    
 }
 
 #project-text {
@@ -216,7 +211,6 @@ footer {
 #contact-wrapper {
     display: flex;
     align-items: center;
-
 }
 
 #contact-wrapper a{
